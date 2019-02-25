@@ -1,32 +1,15 @@
-# Prerequisites
-*.d
+#include <iostream>
+#include <string>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main() {
+	setlocale(LC_ALL, "");
 
-# Precompiled Headers
-*.gch
-*.pch
+	string a;
+	cout << "Name:";
+	cin >> a;
+	cout << "Hello, " << a << endl;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+	system("pause");
+	return 0;
+}
