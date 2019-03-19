@@ -1,32 +1,42 @@
-#include <iostream> 
-#include <string> 
-using namespace std; 
-
-class Students { 
-string *members; 
-int n; 
-public: 
-void makestudents(); 
-void getstudent(); 
-}; 
-void Students::makestudents() { 
-cout << "enter the number of students" << endl; 
-cin >> n; 
-members = new string[n]; 
-for (int i = 0; i < n; i++)
-{cout<<"enter the last name / surnames of the student / students"<<endl;
-cin >> members[i]; }
-} 
-void Students::getstudent() { 
-for (int i = 0; i < n; i++)
-cout << members[i] << endl;
-} 
-
-int main() 
-{ 
-Students a; 
-a.makestudents(); 
-a.getstudent(); 
-system("pause"); 
-return 0; 
+#include <iostream>
+#include <string>
+using namespace std;
+class Group
+{
+string code;
+int course; 
+public:
+Group(string code,int course)
+{
+setCode (code);
+setCourse (course);
+}
+void setCode (string code)
+{
+this->code=code;
+}
+void setCourse ( int course)
+{
+this->course=course;
+}
+string getCode ()
+{
+return code;
+}
+int getCourse ()
+{
+return course;
+}
+};
+int main (){
+string code;
+int course;
+cout « "Enter code" « endl;
+cin » code;
+cout « "Enter course" « endl;
+cin » course;
+Group students(code,course);
+cout « "code " « students.getCode() « endl;
+cout « "course " « students.getCourse() « endl; 
+return 0;
 }
