@@ -1,28 +1,56 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class book
+
+class Book
 {
+string author;
+string name;
+int page;
 public:
-	string autor;
-	string title;
-	double page;
-	void open();
-};
-int main()
+Book (string author, string name, int page)
 {
-	book Book;
-	Book.open();
-	system("pause");
-	return 0;
+setAuthor (author);
+setName (name);
+setPage (page); 
+} 
+void setAuthor (string author)
+{
+this->author=author;
 }
-void book::open()
+void setName (string name)
 {
-    	double random;
-	cout << "enter author" << endl;
-	cin >> autor;
-	cout << "Enter the title" << endl;
-	cin >> title;
-	random = 1 + rand() % 50;
-	cout << " " << autor << " " << "" << title << " " << " open on" <<" "<< random <<" "<< "page" << endl;
+this->name=name;
+}
+void setPage (int page)
+{
+this->page=page;
+}
+string getAuthor ()
+{
+return author;
+}
+string getName ()
+{
+return name;
+}
+int getPage ()
+{
+return page; 
+}
+};
+int main (){
+string author,name;
+int page;
+cout « "Enter author " « endl;
+cin » author;
+cout « "Enter name " « endl;
+cin » name;
+cout « "Enter page " «endl;
+cin » page;
+Book book (author,name,page);
+cout « "author: " « book.getAuthor() « endl;
+cout « "name: " « book.getName() « endl;
+cout « "page: " « book.getPage() « endl;
+return 0;
 }
