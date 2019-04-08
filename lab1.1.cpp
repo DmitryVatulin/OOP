@@ -36,7 +36,6 @@ c = b * a;
 cout << c;
 break;
 {
-    //2 задание
 }
 case 4:
 c = a - b;
