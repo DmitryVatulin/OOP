@@ -22,7 +22,7 @@ class Computer : public Screen, Keyboard {
 public:
 Computer(double screenSize, int buttons) : Screen(screenSize), Keyboard(buttons) {};
 
-void changeKeyboard(double size) {
+void changeScreen(double size) {
 cout << "screen" << screenSize <<
 "has been changed" << size << "size" << endl;
 screenSize = size;
