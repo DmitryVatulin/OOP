@@ -20,7 +20,7 @@ class Complex {
             cout << "Complex number: "<< endl;
             cout << "Real part: " << real << endl;
             cout << "Imaginary part: " << imag << endl;
-            cout << "The absolute value of a number: " << this->get_abs() << endl << endl;
+            cout << "The absolute value of a number: " << this->get_abs() << endl;
         };
 };
 
