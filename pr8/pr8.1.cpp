@@ -6,15 +6,15 @@ int main() {
     ofstream creating_file;
     ifstream reading_file;
     reading_file.open("file.txt");
-    if (reading_file.is_open()) {
+    if (reading_file.is_open()){
         string a;
-        while(!reading_file.eof()) {
+        while(!reading_file.eof()){
             reading_file >> a;
-            cout << a << endl;
+            cout << a << ' ';
         }
         reading_file.close();
-    } else {
-        cout << "File not found. Please write the data to a file.." << endl;
+    }else{
+        cout << "File not found.Please write the data to a file.";
         creating_file.open("file.txt",ios_base::trunc);
         creating_file.close();
     }
