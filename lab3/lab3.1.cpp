@@ -21,11 +21,9 @@ class Child {
         };
 
         void print_value() {
-            cout << "===================" << endl;
             cout << "Имя: " << name << endl;
             cout << "Фамилия: " << family << endl;
             cout << "Возраст: " << age << endl;
-            cout << "===================" << endl;
         };
 };
 
