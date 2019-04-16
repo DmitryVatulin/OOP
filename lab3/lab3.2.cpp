@@ -9,12 +9,10 @@ class Tiles {
         int size_w;
         int price;
         void getData() {
-            cout << "=======================" << endl;
             cout << "Brand: " << '\t' << brand << endl;
             cout << "Length: " << '\t' << size_h << endl;
             cout << "Width " << '\t' << size_w << endl;
             cout << "Price: " << '\t' << price << endl;
-            cout << "=======================" << endl;
         };
 };
 
