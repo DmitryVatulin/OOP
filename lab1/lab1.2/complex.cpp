@@ -5,39 +5,39 @@
 Complex::Complex()
 {
 	this->real = 0;
-	this->image = 0;
+	this->imag = 0;
 }
-Complex::Complex(double real, double image)
+Complex::Complex(double real, double imag)
 {
 	this->real = real;
-	this->image = image;
+	this->imag = imag;
 }
-void Complex::setComplex(double real,double image) {
+void Complex::setComplex(double real,double imag) {
 	this->real = real;
-	this->image = image;
+	this->image = imag;
 }
 void Complex::getComplex() {
-	std::cout << real << " + (" << image << "i)\n";
+	std::cout << real << " + (" << imag << "i)\n";
 }
 double Complex::getModule() {
-	return(sqrt(real*real + image * image));
+	return(sqrt(real*real + imag * imag));
 }
 Complex& Complex::operator=(const Complex& x) {
 	re = x.real;
-	im = x.image;
+	im = x.imag;
 	return *this;
 }
 const Complex operator+(const Complex& x1, const Complex& x2) {
-	return Complex(x1.real + x2.real, x1.image + x2.image);
+	return Complex(x1.real + x2.real, x1.imag + x2.imag);
 }
 const Complex operator-(const Complex& x1, const Complex& x2) {
-	return Complex(x1.real - x2.real, x1.image - x2.image);
+	return Complex(x1.real - x2.real, x1.imag - x2.imag);
 }
 const Complex operator*(const Complex& x1, const Complex& x2) {
-	return Complex(x1.real*x2.real - x1.image*x2.image, x1.real*x2.image + x2.real*x1.image);
+	return Complex(x1.real*x2.real - x1.imag*x2.imag, x1.real*x2.imag + x2.real*x1.imag);
 }
 const Complex operator/(const Complex& x1, const Complex& x2) {
-	return Complex((x1.real*x2.real + x1.image*x2.image) / (x2.real*x2.real + x2.image*x2.image), (x1.real*x2.image - x1.image*x2.real) / (x2.real*x2.real + x2.image*x2.image));
+	return Complex((x1.real*x2.real + x1.imag*x2.imag) / (x2.real*x2.real + x2.imag*x2.imag), (x1.real*x2.imag - x1.imag*x2.real) / (x2.real*x2.real + x2.imag*x2.imag));
 }
 
 Complex::~Complex()
