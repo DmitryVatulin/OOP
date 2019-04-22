@@ -4,11 +4,11 @@ class Complex
 {
 private:
 	double real;
-	double image;
+	double imag;
 public:
 	Complex();
 	Complex(double, double);
-	void setComplex(double real,double image);
+	void setComplex(double real,double imag);
 	void getComplex();
 	double getModule();
 	Complex& operator=(const Complex&);
