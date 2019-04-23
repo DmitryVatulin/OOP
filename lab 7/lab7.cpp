@@ -16,11 +16,7 @@ class Human {
             age = 0;
         };
 
-        Human(string name, string surname, string midname, int age) {
-            this->name = name;
-            this->surname = surname;
-            this->midname = midname;
-            this->age = age;
+        Human(string surname, string name, string midname, int age) : name(name), surname(surname), midname(midname), age(age) {
         };
 
         virtual void print() = 0;
