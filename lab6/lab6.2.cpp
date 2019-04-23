@@ -55,7 +55,6 @@ int main() {
     cout << "enter habitat: ";
     cin >> habitat;
     Animal a(age, name, habitat);
-    
     cout << "Bird" << endl;
     cout << "enter name: ";
     cin >> name;
@@ -64,7 +63,6 @@ int main() {
     cout << "enter habitat: ";
     cin >> habitat;
     Bird b(age, name, habitat);
-    
     cout << "Fish" << endl;
      cout << "enter name: ";
     cin >> name;
@@ -73,7 +71,6 @@ int main() {
     cout << "enter habitat: ";
     cin >> habitat;
     Fish c(age, name, habitat);
-    
     cout << "Animal" << endl << "name: " << a.getName() << endl << "age: " << a.getAge() << endl << "habitat: " << a.getHabitat() <<endl;
     a.move();
     cout << "Bird" << endl << "name: " << b.getName() << endl << "age: " << b.getAge() << endl << "habitat: " << a.getHabitat() <<endl;
