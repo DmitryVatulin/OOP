@@ -3,25 +3,52 @@
 using namespace std;
 
 class Vector {
-    private:
-        float x;
-        float y;
-    public:
-        void set_value(float a, float b) {
-            this->x = a;
-            this->y = b;
-        }
-        float get_abs() {
-            return sqrt(x*x + y*y);
-        };
+	double x;
+	double y;
+	double z;
+public:
+	Vector(double x, double y, double z) { setVector(x, y, z); }
 
-        void plus(Vector b) {
-            x += b.x;
-            y += b.y;
-        };
-        
-        void minus(Vector b) {
-            x -= b.x;
-            y -= b.y;
-        };
+	void setVector(double x, double y, double z);	
+
+	double getModule() { return sqrt(x * x + y * y + z * z); }	
+
+	void printData();	
+	Vector operator= (const Vector& v) { return Vector(v.x, v.y, v.z); }
+
+	friend Vector operator+ (const Vector& v1, const Vector& v2) {
+		return Vector(v1.x + v2.x, v1.y + v2.y, v1.z + v2.z);
+	}
+
+	friend Vector operator- (const Vector& v1, const Vector& v2) {
+		return Vector(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z);
+	}
+};
+
+int main() {
+	double x, y, z;
+	cout << "Set coordinates of the vector:" << endl << "x = ";
+	cin >> x;
+	cout << "y = ";
+	cin >> y;
+	cout << "z = ";
+	cin >> z;
+	Vector v1(x, y, z);
+
+	Vector v2 = v1 + v1 - v1;
+	v2.printData();
+
+	system("pause");
+	return 0;
+}
+
+void Vector::setVector(double x, double y, double z) {
+	this->x = x;
+	this->y = y;
+	this->z = z;
+}
+
+void Vector::printData() {
+	cout << "Coordinates: (" << x << ", " << y << ", " << z << ")" << endl;
+	cout << "Module: " << getModule() << endl;
 }
