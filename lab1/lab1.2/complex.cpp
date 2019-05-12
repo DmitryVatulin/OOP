@@ -1,7 +1,4 @@
 #include "Complex.h"
-
-
-
 Complex::Complex()
 {
 	this->real = 0;
