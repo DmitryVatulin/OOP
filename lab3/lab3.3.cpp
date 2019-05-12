@@ -2,29 +2,39 @@
 #include <string>
 #include <cmath>
 using namespace std;
-class complex {
+
+class Complex 
+{
+	double Re, Im;
 public:
-double real;
-double imag;
-double mod;
-void abs() {
-mod=sqrt(pow(real, 2) + pow(imag, 2));
-}
-void vivod() {
-cout << real << " " << imag << " " << mod << endl;
-}
+	void set_c()
+	{
+		cout << "Enter valid part: " << endl;
+		cin >> Re;
+		cout << "Enter the imaginary part: " << endl;
+		cin >> Im; 
+	}
+	string get_c() 
+	{
+		return to_string(Re) + "+" + to_string(Im) + "i";
+	}
+	double modul() 
+	{
+		return sqrt(Re*Re + Im*Im);
+	}
+	double arg()
+	{
+		return atan(Im / Re);
+	}
 };
+
 int main()
 {
-int k;
-complex chislo;
-double mod1,mod2;
-cin >> k;
-switch (k) {
-case 3:
-cin >> chislo.real >> chislo.imag;
-chislo.abs();
-chislo.vivod();
-break;
-}
+	Complex a;
+	a.set_c();
+	cout << a.get_c() << endl;;
+	cout << a.modul()<<endl;
+	cout<<a.arg()<<endl;
+	system("pause");
+    return 0;
 }
