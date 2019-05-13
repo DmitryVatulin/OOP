@@ -1,0 +1,195 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Plumber {
+    private:
+        string name;
+        string surname;
+        string experience;
+        int age;
+    public:Plumber() {}
+        int a;
+        Plumber(string name, string surname, string experience, int age) {
+            this->age = age;
+            this->name = name;
+            this->surname = surname;
+            this->experience = experience;
+        };
+
+        void print_value() {
+            cout << "Имя: " << name << endl;
+            cout << "Фамилия: " << surname << endl;
+            cout << "Стаж работы: " << experience << endl;
+            cout << "Возраст: " << age << endl;
+        };
+        
+};
+class  Electrician {
+    string name;
+        string surname;
+        string experience;
+        int age;
+    public:Electrician() {}
+        int a;
+        Electrician(string name, string surname, string experience, int age) {
+            this->age = age;
+            this->name = name;
+            this->surname = surname;
+            this->experience = experience;
+        };
+
+        void print_value() {
+            cout << "Имя: " << name << endl;
+            cout << "Фамилия: " << surname << endl;
+            cout << "Стаж работы: " << experience << endl;
+            cout << "Возраст: " << age << endl;
+        };
+    
+};
+class  Driver {
+    string name;
+        string surname;
+        string experience;
+        int age;
+    public:Driver() {}
+        int a;
+        Driver(string name, string surname, string experience, int age) {
+            this->age = age;
+            this->name = name;
+            this->surname = surname;
+            this->experience = experience;
+        };
+
+        void print_value() {
+            cout << "Имя: " << name << endl;
+            cout << "Фамилия: " << surname << endl;
+            cout << "Стаж работы: " << experience << endl;
+            cout << "Возраст: " << age << endl;
+        };
+};
+class  Nanny {
+    string name;
+        string surname;
+        string experience;
+        int age;
+    public:Nanny() {}
+        int a;
+        Nanny(string name, string surname, string experience, int age) {
+            this->age = age;
+            this->name = name;
+            this->surname = surname;
+            this->experience = experience;
+        };
+
+        void print_value() {
+            cout << "Имя: " << name << endl;
+            cout << "Фамилия: " << surname << endl;
+            cout << "Стаж работы: " << experience << endl;
+            cout << "Возраст: " << age << endl;
+        };
+};
+class  Tutor {
+    string name;
+        string surname;
+        string experience;
+        int age;
+    public:Tutor() {}
+        int a;
+        Tutor(string name, string surname, string experience, int age) {
+            this->age = age;
+            this->name = name;
+            this->surname = surname;
+            this->experience = experience;
+        };
+
+        void print_value() {
+            cout << "Имя: " << name << endl;
+            cout << "Фамилия: " << surname << endl;
+            cout << "Стаж работы: " << experience << endl;
+            cout << "Возраст: " << age << endl;
+        };
+};
+class  Waiter {
+        string name;
+        string surname;
+        string experience;
+        int age;
+    public:Waiter() {}
+        int a;
+        Waiter(string name, string surname, string experience, int age) {
+            this->age = age;
+            this->name = name;
+            this->surname = surname;
+            this->experience = experience;
+        };
+
+        void print_value() {
+            cout << "Имя: " << name << endl;
+            cout << "Фамилия: " << surname << endl;
+            cout << "Стаж работы: " << experience << endl;
+            cout << "Возраст: " << age << endl;
+        };
+};
+int main(int argc, char const *argv[])
+{
+    int b;
+	cout << "Здравствуйте!"<< endl <<"Пожалуйста,выберите необходимую вам услугу:" << endl << "1 - plumber(сантехник)" << endl << "2 - electrician(электрик)" << endl << "3 - driver(водитель)" << endl << "4 - nanny(няня)" << endl << "5 - tutor(репетитор)" << endl << "6 - waiter(официант) " << endl;
+	cin >> b;
+	if(b==1){ Plumber ch1((string)"Иван", (string)"Сидоров", (string)"4 года", 32),ch2((string)"Влад",(string)"Кузнецов", (string)"3 года", 25),ch3((string)"Никита",(string)"Воробьев", (string)"0,5 года", 22),ch4((string)"Александр", (string)"Мельников", (string)"10 лет", 45),ch5((string)"Вадим", (string)"Грачев", (string)"6 лет", 32);
+    ch1.print_value();
+    ch2.print_value();
+    ch3.print_value();
+    ch4.print_value();
+    ch5.print_value();
+	}
+	else {
+	    if (b == 2) { Electrician dh1((string)"Глеб", (string)"Моисеев", (string)"1 год", 24),dh2((string)"Игорь",(string)"Юдин", (string)"4 года", 29),dh3((string)"Евгений",(string)"Краснов", (string)"6 лет", 35),dh4((string)"Дмитрий", (string)"Литвинов", (string)"9 лет", 40),dh5((string)"Алексей", (string)"Бородин", (string)"2 года", 31);
+    dh1.print_value();
+    dh2.print_value();
+    dh3.print_value();
+    dh4.print_value();
+    dh5.print_value();
+	}
+	else {
+	    if (b == 3) { Driver bh1((string)"Даниил", (string)"Крюков", (string)"5 лет", 30),bh2((string)"Пётр",(string)"Зотов", (string)"2 года", 23),bh3((string)"Владимир",(string)"Шишкин", (string)"10 лет", 38),bh4((string)"Николай", (string)"Самойлов", (string)"1,5 года", 24),bh5((string)"Станислав", (string)"Носов", (string)"15 лет", 43);
+    bh1.print_value();
+    bh2.print_value();
+    bh3.print_value();
+    bh4.print_value();
+    bh5.print_value();
+	}
+	else {
+	    if (b == 4) { Nanny ah1((string)"Валерия", (string)"Авдеева", (string)"0,5 года", 20),ah2((string)"Евгения",(string)"Головина", (string)"4 года", 26),ah3((string)"Любовь",(string)"Баженова", (string)"18 лет", 56),ah4((string)"Анастасия", (string)"Костина", (string)"4 года", 35),ah5((string)"Александра", (string)"Корнилова", (string)"7 лет", 50);
+    ah1.print_value();
+    ah2.print_value();
+    ah3.print_value();
+    ah4.print_value();
+    ah5.print_value();
+	}
+	else { 
+	    if (b == 5) { Tutor fh1((string)"Галина", (string)"Лукина", (string)"20 лет", 50),fh2((string)"Лилия",(string)"Горелова", (string)"10 лет", 45),fh3((string)"Светлана",(string)"Трифонова", (string)"35 лет", 63),fh4((string)"Андрей", (string)"Зорин", (string)"17 лет", 41),fh5((string)"Михаил", (string)"Антипов", (string)"5 лет", 29);
+    fh1.print_value();
+    fh2.print_value();
+    fh3.print_value();
+    fh4.print_value();
+    fh5.print_value();
+	}
+	else if (b == 6) { Waiter gh1((string)"Ксения", (string)"Кулакова", (string)"1 лет", 21),gh2((string)"Кирилл",(string)"Макеев", (string)"0,5 года", 23),gh3((string)"Ольга",(string)"Суханова", (string)"1,5 года", 22),gh4((string)"Дмитрий", (string)"Шубин", (string)"1 год", 20),gh5((string)"Марина", (string)"Русакова", (string)"2 года", 23);
+    gh1.print_value();
+    gh2.print_value();
+    gh3.print_value();
+    gh4.print_value();
+    gh5.print_value();
+	}
+	}
+	}
+	}
+	}
+	{
+	    int c;
+	    cout << "Выберите номер подходящего для вас работника" << endl;
+	    cin >> c;
+	cout << "Спасибо,что выбрали именно нашу компанию!\n" << "Работник под номером " << c << " сможет выйти на работу в течении следующих 24 часов!" << endl;
+}
+}
