@@ -261,7 +261,7 @@ public:Lawyer() {}
 		   this->name = name;
 		   this->surname = surname;
 		   this->experience = experience;
-		   pr = "lawier";
+		   pr = "lawyer";
 	   };
 
 	   void print_value() {
@@ -296,7 +296,7 @@ public:Manager() {}
 
 	   void print_value() {
 		   cout << "Имя: " << name << endl;
-		   cout << "Фамилия: "<< surname << endl;
+		   cout << "Фамилия: " << surname << endl;
 		   cout << "Стаж работы: " << experience << endl;
 		   cout << "Возраст: " << age << endl;
 	   };
@@ -324,7 +324,7 @@ int main(int argc, char const* argv[])
 	Manager a10("Глеб", "Литвинов", "9 лет", 40);
 	do {
 
-		cout << "Здравствуйте!" << endl << "Пожалуйста,введите 1 чтобы посмотреть весь список услуг" << endl;
+		cout << "Пожалуйста,введите 1 чтобы посмотреть весь список услуг\n" << "Введить 0 для выхода" << endl;
 		cin >> b;
 		system("cls");
 		switch (b)
@@ -355,10 +355,11 @@ int main(int argc, char const* argv[])
 											if (a9.check_pr(q))a9.print_value(); else
 												if (a10.check_pr(q))a10.print_value(); else
 													cout << "не найдено" << endl;
-			cout << "Спасибо,что выбрали именно нашу компанию!\n" << "Ваш работник сможет выйти на работу в течении следующих 24 часов!" << endl;
+			cout << "Введите 0 для выхода" << endl;
 		}
 		default:
 			break;
 		}
 	} while (b != 0);
 }
+
