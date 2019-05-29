@@ -7,357 +7,357 @@ using namespace std;
 
 class Plumber {
 private:
-string pr;
-string name;
-string surname;
-string experience;
-int age;
+	string pr;
+	string name;
+	string surname;
+	string experience;
+	int age;
 public:Plumber() {}
-int a;
-Plumber(string name, string surname, string experience, int age) {
-this->age = age;
-this->name = name;
-this->surname = surname;
-this->experience = experience;
-pr = "plumber";
-};
+	   int a;
+	   Plumber(string name, string surname, string experience, int age) {
+		   this->age = age;
+		   this->name = name;
+		   this->surname = surname;
+		   this->experience = experience;
+		   pr = "plumber";
+	   };
 
-void print_value() {
-cout « "Имя: " « name « endl;
-cout « "Фамилия: " « surname « endl;
-cout « "Стаж работы: " « experience « endl;
-cout « "Возраст: " « age « endl;
-};
-void prof() {
-cout « "plumber" « endl;
-}
-bool check_pr(string &a) {
-if (a == pr)return true;
-else return false;
-}
+	   void print_value() {
+		   cout << "Имя: " << name << endl;
+		   cout << "Фамилия: " << surname << endl;
+		   cout << "Стаж работы: " << experience << endl;
+		   cout << "Возраст: " << age << endl;
+	   };
+	   void prof() {
+		   cout << "plumber" << endl;
+	   }
+	   bool check_pr(string& a) {
+		   if (a == pr)return true;
+		   else return false;
+	   }
 };
 class Electrician {
-string pr;
-string name;
-string surname;
-string experience;
-int age;
+	string pr;
+	string name;
+	string surname;
+	string experience;
+	int age;
 public:Electrician() {}
-int a;
-Electrician(string name, string surname, string experience, int age) {
-this->age = age;
-this->name = name;
-this->surname = surname;
-this->experience = experience;
-pr = "electrician";
-};
+	   int a;
+	   Electrician(string name, string surname, string experience, int age) {
+		   this->age = age;
+		   this->name = name;
+		   this->surname = surname;
+		   this->experience = experience;
+		   pr = "electrician";
+	   };
 
-void print_value() {
-cout « "Имя: " « name « endl;
-cout « "Фамилия: " « surname « endl;
-cout « "Стаж работы: " « experience « endl;
-cout « "Возраст: " « age « endl;
-};
-void prof() {
-cout « "electrician" « endl;
-}
-bool check_pr(string &a) {
-if (a == pr)return true;
-else return false;
-}
+	   void print_value() {
+		   cout << "Имя: " << name << endl;
+		   cout << "Фамилия: " << surname << endl;
+		   cout << "Стаж работы: " << experience << endl;
+		   cout << "Возраст: " << age << endl;
+	   };
+	   void prof() {
+		   cout << "electrician" << endl;
+	   }
+	   bool check_pr(string& a) {
+		   if (a == pr)return true;
+		   else return false;
+	   }
 
 };
 class Driver {
-string pr;
-string name;
-string surname;
-string experience;
-int age;
+	string pr;
+	string name;
+	string surname;
+	string experience;
+	int age;
 public:Driver() {}
-int a;
-Driver(string name, string surname, string experience, int age) {
-this->age = age;
-this->name = name;
-this->surname = surname;
-this->experience = experience;
-pr = "driver";
-};
+	   int a;
+	   Driver(string name, string surname, string experience, int age) {
+		   this->age = age;
+		   this->name = name;
+		   this->surname = surname;
+		   this->experience = experience;
+		   pr = "driver";
+	   };
 
-void print_value() {
-cout « "Имя: " « name « endl;
-cout « "Фамилия: " « surname « endl;
-cout « "Стаж работы: " « experience « endl;
-cout « "Возраст: " « age « endl;
-};
-void prof() {
-cout « "driver" « endl;
-}
-bool check_pr(string &a) {
-if (a == pr)return true;
-else return false;
-}
+	   void print_value() {
+		   cout << "Имя: " << name << endl;
+		   cout << "Фамилия: " << surname << endl;
+		   cout << "Стаж работы: " << experience << endl;
+		   cout << "Возраст: " << age << endl;
+	   };
+	   void prof() {
+		   cout << "driver" << endl;
+	   }
+	   bool check_pr(string& a) {
+		   if (a == pr)return true;
+		   else return false;
+	   }
 };
 class Nanny {
-string name;
-string surname;
-string experience;
-string pr;
-int age;
+	string name;
+	string surname;
+	string experience;
+	string pr;
+	int age;
 public:Nanny() {}
-int a;
-Nanny(string name, string surname, string experience, int age) {
-this->age = age;
-this->name = name;
-this->surname = surname;
-this->experience = experience;
-pr = "nanny";
-};
+	   int a;
+	   Nanny(string name, string surname, string experience, int age) {
+		   this->age = age;
+		   this->name = name;
+		   this->surname = surname;
+		   this->experience = experience;
+		   pr = "nanny";
+	   };
 
-void print_value() {
-cout « "Имя: " « name « endl;
-cout « "Фамилия: " « surname « endl;
-cout « "Стаж работы: " « experience « endl;
-cout « "Возраст: " « age « endl;
-};
-void prof() {
-cout « "nanny" « endl;
-}
-bool check_pr(string &a) {
-if (a == pr)return true;
-else return false;
-}
+	   void print_value() {
+		   cout << "Имя: " << name << endl;
+		   cout << "Фамилия: " << surname << endl;
+		   cout << "Стаж работы: " << experience << endl;
+		   cout << "Возраст: " << age << endl;
+	   };
+	   void prof() {
+		   cout << "nanny" << endl;
+	   }
+	   bool check_pr(string& a) {
+		   if (a == pr)return true;
+		   else return false;
+	   }
 };
 class Tutor {
-string name;
-string surname;
-string experience;
-string pr;
-int age;
+	string name;
+	string surname;
+	string experience;
+	string pr;
+	int age;
 public:Tutor() {}
-int a;
-Tutor(string name, string surname, string experience, int age) {
-this->age = age;
-this->name = name;
-this->surname = surname;
-this->experience = experience;
-pr = "tutor";
-};
+	   int a;
+	   Tutor(string name, string surname, string experience, int age) {
+		   this->age = age;
+		   this->name = name;
+		   this->surname = surname;
+		   this->experience = experience;
+		   pr = "tutor";
+	   };
 
-void print_value() {
-cout « "Имя: " « name « endl;
-cout « "Фамилия: " « surname « endl;
-cout « "Стаж работы: " « experience « endl;
-cout « "Возраст: " « age « endl;
-};
-void prof() {
-cout « "tutor" « endl;
-}
-bool check_pr(string &a) {
-if (a == pr)return true;
-else return false;
-}
+	   void print_value() {
+		   cout << "Имя: " << name << endl;
+		   cout << "Фамилия: " << surname << endl;
+		   cout << "Стаж работы: " << experience << endl;
+		   cout << "Возраст: " << age << endl;
+	   };
+	   void prof() {
+		   cout << "tutor" << endl;
+	   }
+	   bool check_pr(string& a) {
+		   if (a == pr)return true;
+		   else return false;
+	   }
 };
 class Waiter {
-string name;
-string surname;
-string experience;
-string pr;
-int age;
+	string name;
+	string surname;
+	string experience;
+	string pr;
+	int age;
 public:Waiter() {}
-int a;
-Waiter(string name, string surname, string experience, int age) {
-this->age = age;
-this->name = name;
-this->surname = surname;
-this->experience = experience;
-pr = "waiter";
-};
+	   int a;
+	   Waiter(string name, string surname, string experience, int age) {
+		   this->age = age;
+		   this->name = name;
+		   this->surname = surname;
+		   this->experience = experience;
+		   pr = "waiter";
+	   };
 
-void print_value() {
-cout « "Имя: " « name « endl;
-cout « "Фамилия: " « surname « endl;
-cout « "Стаж работы: " « experience « endl;
-cout « "Возраст: " « age « endl;
-};
-void prof() {
-cout « "waiter" « endl;
-}
-bool check_pr(string &a) {
-if (a == pr)return true;
-else return false;
-}
+	   void print_value() {
+		   cout << "Имя: " << name << endl;
+		   cout << "Фамилия: " << surname << endl;
+		   cout << "Стаж работы: " << experience << endl;
+		   cout << "Возраст: " << age << endl;
+	   };
+	   void prof() {
+		   cout << "waiter" << endl;
+	   }
+	   bool check_pr(string& a) {
+		   if (a == pr)return true;
+		   else return false;
+	   }
 };
 class Designer {
-string name;
-string surname;
-string experience;
-string pr;
-int age;
+	string name;
+	string surname;
+	string experience;
+	string pr;
+	int age;
 public:Designer() {}
-int a;
-Designer(string name, string surname, string experience, int age) {
-this->age = age;
-this->name = name;
-this->surname = surname;
-this->experience = experience;
-pr = "designer";
-};
+	   int a;
+	   Designer(string name, string surname, string experience, int age) {
+		   this->age = age;
+		   this->name = name;
+		   this->surname = surname;
+		   this->experience = experience;
+		   pr = "designer";
+	   };
 
-void print_value() {
-cout « "Имя: " « name « endl;
-cout « "Фамилия: " « surname « endl;
-cout « "Стаж работы: " « experience « endl;
-cout « "Возраст: " « age « endl;
-};
-void prof() {
-cout « "designer" « endl;
-}
-bool check_pr(string &a) {
-if (a == pr)return true;
-else return false;
-}
+	   void print_value() {
+		   cout << "Имя: " << name << endl;
+		   cout << "Фамилия: " << surname << endl;
+		   cout << "Стаж работы: " << experience << endl;
+		   cout << "Возраст: " << age << endl;
+	   };
+	   void prof() {
+		   cout << "designer" << endl;
+	   }
+	   bool check_pr(string& a) {
+		   if (a == pr)return true;
+		   else return false;
+	   }
 };
 class Pharmacist {
-string name;
-string surname;
-string experience;
-string pr;
-int age;
+	string name;
+	string surname;
+	string experience;
+	string pr;
+	int age;
 public:Pharmacist() {}
-int a;
-Pharmacist(string name, string surname, string experience, int age) {
-this->age = age;
-this->name = name;
-this->surname = surname;
-this->experience = experience;
-pr = "pharmasist";
-};
+	   int a;
+	   Pharmacist(string name, string surname, string experience, int age) {
+		   this->age = age;
+		   this->name = name;
+		   this->surname = surname;
+		   this->experience = experience;
+		   pr = "pharmasist";
+	   };
 
-void print_value() {
-cout « "Имя: " « name « endl;
-cout « "Фамилия: " « surname « endl;
-cout « "Стаж работы: " « experience « endl;
-cout « "Возраст: " « age « endl;
-};
-void prof() {
-cout « "pharmasist" « endl;
-}
-bool check_pr(string &a) {
-if (a == pr)return true;
-else return false;
-}
+	   void print_value() {
+		   cout << "Имя: " << name << endl;
+		   cout << "Фамилия: " << surname << endl;
+		   cout << "Стаж работы: " << experience << endl;
+		   cout << "Возраст: " << age << endl;
+	   };
+	   void prof() {
+		   cout << "pharmasist" << endl;
+	   }
+	   bool check_pr(string& a) {
+		   if (a == pr)return true;
+		   else return false;
+	   }
 };
 class Lawyer {
-string name;
-string surname;
-string experience;
-string pr;
-int age;
+	string name;
+	string surname;
+	string experience;
+	string pr;
+	int age;
 public:Lawyer() {}
-int a;
+	   int a;
 
-Lawyer(string name, string surname, string experience, int age) {
-this->age = age;
-this->name = name;
-this->surname = surname;
-this->experience = experience;
-pr = "lawier";
-};
+	   Lawyer(string name, string surname, string experience, int age) {
+		   this->age = age;
+		   this->name = name;
+		   this->surname = surname;
+		   this->experience = experience;
+		   pr = "lawier";
+	   };
 
-void print_value() {
-cout « "Имя: " « name « endl;
-cout « "Фамилия: " « surname « endl;
-cout « "Стаж работы: " « experience « endl;
-cout « "Возраст: " « age « endl;
-};
-void prof() {
-cout « "lawyer" « endl;
-}
-bool check_pr(string &a) {
-if (a == pr)return true;
-else return false;
-}
+	   void print_value() {
+		   cout << "Имя: " << name << endl;
+		   cout << "Фамилия: " << surname << endl;
+		   cout << "Стаж работы: " << experience << endl;
+		   cout << "Возраст: " << age << endl;
+	   };
+	   void prof() {
+		   cout << "lawyer" << endl;
+	   }
+	   bool check_pr(string& a) {
+		   if (a == pr)return true;
+		   else return false;
+	   }
 };
 class Manager {
-string name;
-string surname;
-string experience;
-string pr;
-int age;
+	string name;
+	string surname;
+	string experience;
+	string pr;
+	int age;
 public:Manager() {}
-int a;
-Manager(string name, string surname, string experience, int age) {
-this->age = age;
-this->name = name;
-this->surname = surname;
-this->experience = experience;
-pr = "manager";
-};
+	   int a;
+	   Manager(string name, string surname, string experience, int age) {
+		   this->age = age;
+		   this->name = name;
+		   this->surname = surname;
+		   this->experience = experience;
+		   pr = "manager";
+	   };
 
-void print_value() {
-cout « "Имя: " « name « endl;
-cout « "Фамилия: " « surname « endl;
-cout « "Стаж работы: " « experience « endl;
-cout « "Возраст: " « age « endl;
-};
-void prof() {
-cout « "manager" « endl;
-}
-bool check_pr(string &a) {
-if (a == pr)return true;
-else return false;
-}
+	   void print_value() {
+		   cout << "Имя: " << name << endl;
+		   cout << "Фамилия: "<< surname << endl;
+		   cout << "Стаж работы: " << experience << endl;
+		   cout << "Возраст: " << age << endl;
+	   };
+	   void prof() {
+		   cout << "manager" << endl;
+	   }
+	   bool check_pr(string& a) {
+		   if (a == pr)return true;
+		   else return false;
+	   }
 };
 int main(int argc, char const* argv[])
 {
-setlocale(LC_ALL, "Russian");
-int b;
-Plumber a1("1", "1","1",1);
-Electrician a2("1", "1", "1", 1);
-Driver a3("1", "1", "1", 1);
-Nanny a4("1", "1", "1", 1);
-Waiter a5("1", "1", "1", 1);
-Tutor a6("1", "1", "1", 1);
-Designer a7("1", "1", "1", 1);
-Pharmacist a8("1", "1", "1", 1);
-Lawyer a9("1", "1", "1", 1);
-Manager a10("1", "1", "1", 1);
-do {
+	setlocale(LC_ALL, "Russian");
+	int b;
+	Plumber a1("1", "1", "1", 1);
+	Electrician a2("1", "1", "1", 1);
+	Driver a3("1", "1", "1", 1);
+	Nanny a4("1", "1", "1", 1);
+	Waiter a5("1", "1", "1", 1);
+	Tutor a6("1", "1", "1", 1);
+	Designer a7("1", "1", "1", 1);
+	Pharmacist a8("1", "1", "1", 1);
+	Lawyer a9("1", "1", "1", 1);
+	Manager a10("1", "1", "1", 1);
+	do {
 
-cout « "Здравствуйте!" « endl « "Пожалуйста,введите 1 чтобы посмотреть весь список услуг" « endl;
-cin » b;
-system("cls");
-switch (b)
-{
-case 1: {
-a1.prof();
-a2.prof();
-a3.prof();
-a4.prof();
-a5.prof();
-a6.prof();
-a7.prof();
-a8.prof();
-a9.prof();
-a10.prof();
-string q;
-cout « "введите название" « endl;
-cin » q;
-if (a1.check_pr(q))a1.print_value(); else
-if (a2.check_pr(q))a2.print_value(); else
-if (a3.check_pr(q))a3.print_value(); else
-if (a4.check_pr(q))a4.print_value(); else
-if (a5.check_pr(q))a5.print_value(); else
-if (a6.check_pr(q))a6.print_value(); else
-if
-(a7.check_pr(q))a7.print_value(); else
-if (a8.check_pr(q))a8.print_value(); else
-if (a9.check_pr(q))a9.print_value(); else
-if (a10.check_pr(q))a10.print_value(); else
-cout « "не найдено" « endl;
-}
-default:
-break;
-}
-} while (b != 0);
+		cout << "Здравствуйте!" << endl << "Пожалуйста,введите 1 чтобы посмотреть весь список услуг" << endl;
+		cin >> b;
+		system("cls");
+		switch (b)
+		{
+		case 1: {
+			a1.prof();
+			a2.prof();
+			a3.prof();
+			a4.prof();
+			a5.prof();
+			a6.prof();
+			a7.prof();
+			a8.prof();
+			a9.prof();
+			a10.prof();
+			string q;
+			cout << "введите название" << endl;
+			cin >> q;
+			if (a1.check_pr(q))a1.print_value(); else
+				if (a2.check_pr(q))a2.print_value(); else
+					if (a3.check_pr(q))a3.print_value(); else
+						if (a4.check_pr(q))a4.print_value(); else
+							if (a5.check_pr(q))a5.print_value(); else
+								if (a6.check_pr(q))a6.print_value(); else
+									if
+										(a7.check_pr(q))a7.print_value(); else
+										if (a8.check_pr(q))a8.print_value(); else
+											if (a9.check_pr(q))a9.print_value(); else
+												if (a10.check_pr(q))a10.print_value(); else
+													cout << "не найдено" << endl;
+		}
+		default:
+			break;
+		}
+	} while (b != 0);
 }
