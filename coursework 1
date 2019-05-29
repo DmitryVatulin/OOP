@@ -312,16 +312,16 @@ int main(int argc, char const* argv[])
 {
 	setlocale(LC_ALL, "Russian");
 	int b;
-	Plumber a1("1", "1", "1", 1);
-	Electrician a2("1", "1", "1", 1);
-	Driver a3("1", "1", "1", 1);
-	Nanny a4("1", "1", "1", 1);
-	Waiter a5("1", "1", "1", 1);
-	Tutor a6("1", "1", "1", 1);
-	Designer a7("1", "1", "1", 1);
-	Pharmacist a8("1", "1", "1", 1);
-	Lawyer a9("1", "1", "1", 1);
-	Manager a10("1", "1", "1", 1);
+	Plumber a1("Иван", "Кузнецов", "12 лет", 36);
+	Electrician a2("Николай", "Юдин", "8 лет", 30);
+	Driver a3("Даниил", "Крюков", "15 лет", 40);
+	Nanny a4("Евгения", "Баженова", "11 лет", 48);
+	Waiter a5("Ксения", "Кулакова", "7 лет", 31);
+	Tutor a6("Галина", "Лукина", "20 лет", 50);
+	Designer a7("Стас", "Грачев", "10 лет", 34);
+	Pharmacist a8("Анастасия", "Костина", "7 лет", 50);
+	Lawyer a9("Алексей", "Бородин", "15 лет", 43);
+	Manager a10("Глеб", "Литвинов", "9 лет", 40);
 	do {
 
 		cout << "Здравствуйте!" << endl << "Пожалуйста,введите 1 чтобы посмотреть весь список услуг" << endl;
@@ -341,7 +341,7 @@ int main(int argc, char const* argv[])
 			a9.prof();
 			a10.prof();
 			string q;
-			cout << "введите название" << endl;
+			cout << "введите название услуги" << endl;
 			cin >> q;
 			if (a1.check_pr(q))a1.print_value(); else
 				if (a2.check_pr(q))a2.print_value(); else
@@ -355,6 +355,7 @@ int main(int argc, char const* argv[])
 											if (a9.check_pr(q))a9.print_value(); else
 												if (a10.check_pr(q))a10.print_value(); else
 													cout << "не найдено" << endl;
+			cout << "Спасибо,что выбрали именно нашу компанию!\n" << "Ваш работник сможет выйти на работу в течении следующих 24 часов!" << endl;
 		}
 		default:
 			break;
